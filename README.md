@@ -47,13 +47,6 @@ AI Observability, FinOps and Governance platform for monitoring AI products and 
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
 
-## Currently Learning
-
-- SQL and product-oriented data analysis
-- Deep learning for NLP
-- Model deployment and inference
-- RAG and LLM-based systems
-
 ## Career Interests
 
 I am looking for an internship or junior position in Data Science or Machine Learning.
