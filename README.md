@@ -32,6 +32,12 @@ Multiclass NLP project for classifying customer requests into 77 banking intents
 
 AI Observability, FinOps and Governance platform for monitoring AI products and agents.
 
+<p align="center">
+  <a href="https://github.com/novaeKH/takt-ai-control-center">
+    <img src="./assets/takt-overview.png" alt="Takt AI Control Center dashboard" width="100%">
+  </a>
+</p>
+
 `FastAPI` `PostgreSQL` `Redis` `Docker`
 
 ## Technologies
@@ -46,6 +52,13 @@ AI Observability, FinOps and Governance platform for monitoring AI products and 
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+
+## Currently Learning
+
+- SQL and product-oriented data analysis
+- Deep learning for NLP
+- Model deployment and inference
+- RAG and LLM-based systems
 
 ## Career Interests
 
