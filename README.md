@@ -46,12 +46,6 @@ Binary classification project for predicting client default risk using preproces
 
 `Python` `Pandas` `Scikit-learn` `CatBoost`
 
-### ROGII Well Trajectory Prediction
-
-Regression project with feature engineering, cross-validation and ensemble models.
-
-`Python` `Pandas` `Scikit-learn` `CatBoost`
-
 ---
 
 ## Currently Learning
