@@ -49,7 +49,6 @@ Regression project for predicting TVT along hidden segments of well trajectories
 
 Binary classification project for prioritizing clients within a limited outbound-call budget.
 
-- Used the full UCI Bank Marketing dataset with 41,188 observations.
 - Removed post-call data leakage and validated models with a temporal split.
 - Selected the top 10% of clients instead of relying on a fixed classification threshold.
 - Achieved **AP 0.530**, **ROC-AUC 0.745** and **Lift@10% 1.91** on the final period.
