@@ -2,7 +2,7 @@
 
 Applied Mathematics student at NUST MISIS, focused on Data Science and Machine Learning.
 
-I build ML projects from data validation and leakage-safe evaluation to modeling and interpretation. My current focus is tabular ML, NLP and practical ML systems.
+I build end-to-end ML projects — from data validation and leakage-safe evaluation to modeling, interpretation and deployment. My current focus is tabular ML, NLP and practical ML systems.
 
 I am looking for a Data Science or Machine Learning internship or junior position.
 
@@ -34,48 +34,67 @@ I am looking for a Data Science or Machine Learning internship or junior positio
 
 ### [ROGII — Wellbore Geology Prediction](https://github.com/novaeKH/rogii-wellbore-prediction)
 
-Regression project for predicting TVT along hidden segments of well trajectories.
+Regression project for predicting TVT along hidden segments of horizontal well trajectories.
 
-- Built leakage-safe validation by complete wells and separate spatial clusters.
-- Reconstructed six train-only geological surfaces with fold-safe IDW interpolation, expanding the feature set from 80 to 112.
-- Combined four CatBoost regressors with a distance guard and boundary anchor correction.
+- Designed leakage-safe validation by complete wells, with a separate spatial guardrail for geographic shift.
+- Engineered 32 fold-safe spatial features by reconstructing six geological surfaces with IDW interpolation.
+- Combined four CatBoost regressors with distance-aware fallback and boundary correction.
 - Improved Public Leaderboard RMSE from **13.608** to **11.670** — a **14.2%** reduction.
 
-`Python` `Pandas` `Scikit-learn` `CatBoost` `Feature Engineering` `Group CV`
+`Python` `Pandas` `CatBoost` `Feature Engineering` `Group CV` `Spatial Validation`
 
 ---
 
 ### [Bank Marketing Prioritization](https://github.com/novaeKH/bank-marketing-prioritization)
 
-Binary classification project for prioritizing clients within a limited outbound-call budget.
+Binary classification and ranking project for prioritizing clients under a 10% outbound-call budget.
 
-- Removed post-call data leakage and validated models with a temporal split.
-- Selected the top 10% of clients instead of relying on a fixed classification threshold.
+- Removed post-call data leakage and used temporal folds to evaluate performance on future campaigns.
+- Compared linear and tree-based models, selecting Logistic Regression for its stability across time.
 - Achieved **AP 0.530**, **ROC-AUC 0.745** and **Lift@10% 1.91** on the final period.
-- Interpreted predictions with permutation importance and Logistic Regression coefficients.
+- Explained the ranking with permutation importance and model coefficients.
 
-`Python` `Pandas` `Scikit-learn` `Binary Classification` `Model Interpretation`
+`Python` `Pandas` `Scikit-learn` `Temporal Validation` `Ranking Metrics` `Model Interpretation`
 
 ---
 
 ### [Banking Intent Classifier](https://github.com/novaeKH/banking-intent-classifier)
 
-Multiclass NLP project for classifying customer requests into 77 banking intents.
+Multiclass NLP project for routing customer requests across 77 banking intents.
 
-- Compared TF-IDF with Logistic Regression, a custom Transformer Encoder and fine-tuned DistilBERT.
-- DistilBERT achieved the best validation macro F1 of **0.882**.
-- TF-IDF remained a strong and efficient baseline with macro F1 of **0.861**.
+- Built a shared leakage-safe evaluation pipeline with fixed splits and macro F1.
+- Compared TF-IDF with Logistic Regression, a custom Transformer Encoder implemented in PyTorch and fine-tuned DistilBERT.
+- DistilBERT reached **0.882 validation macro F1** and **0.886 official test macro F1**; TF-IDF remained a strong baseline at **0.861**.
 
-`Python` `Scikit-learn` `PyTorch` `Transformers` `DistilBERT`
+`Python` `Scikit-learn` `PyTorch` `NLP` `Transformers` `DistilBERT`
+
+---
+
+### [StoryWeaver — 126M Story Generation Model](https://github.com/novaeKH/StoryWeaver)
+
+GPT-style language model trained from scratch for controllable short-story generation.
+
+- Implemented a 126M-parameter decoder-only Transformer in PyTorch with RoPE, GQA, RMSNorm, SwiGLU and KV cache.
+- Built the byte-level BPE tokenizer, data pipeline and mixed-precision training loop with gradient accumulation, validation and checkpointing.
+- Added a FastAPI web application for steering generation with a summary, required words, story opening and narrative features.
+
+<p align="center">
+  <a href="https://github.com/novaeKH/StoryWeaver">
+    <img src="https://raw.githubusercontent.com/novaeKH/StoryWeaver/main/assets/storyweaver_app.png" alt="StoryWeaver story generation interface" width="85%">
+  </a>
+</p>
+
+`Python` `PyTorch` `Transformer` `Tokenizers` `FastAPI` `Generative NLP`
 
 ---
 
 ### [Takt AI Control Center](https://github.com/novaeKH/takt-ai-control-center)
 
-AI Observability, FinOps and Governance platform for monitoring AI products and agents.
+AI Observability, FinOps and Governance platform for operating AI products and agents.
 
-- Tracks token usage, cost, quality and operational status of AI systems.
-- Provides centralized monitoring, policy controls and audit history.
+- Built an AI registry and telemetry pipeline for agent runs, LLM calls, tool calls and business outcomes.
+- Implemented token-cost accounting, budgets, ROI and waste metrics, policy violations, audit history and role-based access.
+- Exposed a REST ingestion API and Python SDK, with FastAPI, PostgreSQL, Redis and React services packaged through Docker Compose.
 
 <p align="center">
   <a href="https://github.com/novaeKH/takt-ai-control-center">
@@ -83,4 +102,4 @@ AI Observability, FinOps and Governance platform for monitoring AI products and 
   </a>
 </p>
 
-`FastAPI` `PostgreSQL` `Redis` `Docker`
+`FastAPI` `PostgreSQL` `Redis` `React` `Docker Compose` `REST API`
