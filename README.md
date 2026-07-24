@@ -70,6 +70,19 @@ Multiclass NLP project for routing customer requests across 77 banking intents.
 
 ---
 
+### [RetailRec — E-commerce Recommendation System](https://github.com/novaeKH/retailrec)
+
+Personalized recommendation system built on RetailRocket e-commerce interaction data.
+
+- Generated Top-10 product recommendations from users’ views, cart additions and purchases.
+- Compared Popularity, Item-KNN, ALS and hybrid approaches using a 14-day temporal holdout.
+- Selected binary Item-KNN, achieving **NDCG@10 of 0.0456** compared with **0.0033** for the Popularity baseline.
+- Evaluated recommendation quality separately for cold, light and active users using ranking and catalog coverage metrics.
+
+`Python` `Pandas` `Recommender Systems` `Item-KNN` `Ranking Metrics` `Temporal Validation`
+
+---
+
 ### [StoryWeaver — 126M Story Generation Model](https://github.com/novaeKH/StoryWeaver)
 
 GPT-style language model trained from scratch for controllable short-story generation.
