@@ -9,10 +9,10 @@
 <table>
   <tr>
     <td width="50%" valign="top">
-      <strong>KION Recommendation System</strong><br>
-      <sub>Рекомендации · локальный проект</sub>
-      <p>Двухэтапная выдача фильмов и сериалов на датасете из 5,48 млн взаимодействий. Объединил кандидатов нескольких моделей и обучил ранкер CatBoost PairLogit.</p>
-      <p><b>MAP@10 0,1456</b> на последней неделе. На трёх недельных срезах прирост к популярности за 7–14 дней составил 9,0–10,3%.</p>
+      <strong><a href="https://github.com/novaeKH/kion-recsys">KION Recommendation System</a></strong><br>
+      <sub>Рекомендации · генерация кандидатов и ранжирование</sub>
+      <p>Персональный топ-10 фильмов и сериалов на 5,48 млн взаимодействий MTS KION. Собрал кандидатов от Popularity, ItemKNN, ALS и модели по метаданным, затем обучил ранкер CatBoost PairLogit.</p>
+      <p><b>MAP@10 0,1456</b> против 0,1319 у популярности за 7 дней. На трёх недельных срезах прирост к свежей популярности составил 9,0–10,3%.</p>
     </td>
     <td width="50%" valign="top">
       <strong><a href="https://github.com/novaeKH/Credit-scoring">Credit Scoring</a></strong><br>
