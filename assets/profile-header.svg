@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="200" viewBox="0 0 1000 200" role="img" aria-labelledby="title">
+  <title id="title">Илья Хейчиев — Data Science и машинное обучение</title>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#102b27"/>
+      <stop offset="1" stop-color="#1c443b"/>
+    </linearGradient>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#a1c3a7" opacity=".16"/>
+    </pattern>
+  </defs>
+  <rect width="1000" height="200" rx="16" fill="url(#background)"/>
+  <path d="M575 0H984A16 16 0 0 1 1000 16V184A16 16 0 0 1 984 200H575Z" fill="url(#dots)"/>
+  <path d="M677 48L759 72L850 100L928 64M677 102L759 72M677 102L759 128L850 100L928 136M677 152L759 128" fill="none" stroke="#9ac1a3" stroke-opacity=".48" stroke-width="1.8"/>
+  <g fill="#537e69" stroke="#a9cab0" stroke-width="1.7">
+    <circle cx="677" cy="48" r="4.5"/>
+    <circle cx="677" cy="102" r="4.5"/>
+    <circle cx="677" cy="152" r="4.5"/>
+    <circle cx="759" cy="72" r="6"/>
+    <circle cx="759" cy="128" r="6"/>
+    <circle cx="928" cy="136" r="5"/>
+  </g>
+  <circle cx="850" cy="100" r="10" fill="#d6e6ab"/>
+  <circle cx="928" cy="64" r="5" fill="#d6e6ab"/>
+  <path d="M56 51H90" stroke="#d6e6ab" stroke-width="3" stroke-linecap="round"/>
+  <text x="56" y="116" font-family="system-ui, Arial, sans-serif" font-size="50" font-weight="700" fill="#f4f8ec">Илья Хейчиев</text>
+  <text x="58" y="155" font-family="system-ui, Arial, sans-serif" font-size="20" font-weight="500" fill="#c3d7c7">Data Science · Machine Learning</text>
+</svg>
